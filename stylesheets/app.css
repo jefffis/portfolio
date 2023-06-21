@@ -64,6 +64,13 @@ strong {
 .body {
     font-size: 24px;
 }
+.heading--intro {
+    color: #03CABE;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 1px 1px 0 #171C21, 2px 2px 0 #171C21, 3px 3px 0 #171C21, 4px 4px 0 #171C21, 5px 5px 0 #171C21, 6px 6px 0 #171C21;
+    text-transform: uppercase;
+}
 
 @media screen and (min-width: 800px) {
     .xl {
@@ -103,6 +110,9 @@ strong {
 }
 .mar-bot--32 {
     margin-bottom: 32px;
+}
+.mar-bot--64 {
+    margin-bottom: 64px;
 }
 .mar-bot--80 {
     margin-bottom: 80px;
@@ -267,6 +277,14 @@ strong {
     background-color: #F0FBF1;
 }
 
+.more-context {
+    color: #FFF;
+    display: block;
+    position: relative;
+    text-align: center;
+    z-index: 3;
+}
+
 @media screen and (min-width: 1248px) {
     .container {
         padding: 0;
@@ -279,7 +297,7 @@ strong {
 
 .about {
     background-color: #5B02A3;
-    padding: 80px 0 160px;
+    padding: 80px 0 0;
     position: relative;
     z-index: 1;
 }
@@ -298,7 +316,7 @@ strong {
 }
 @media screen and (min-width: 800px) {
     .about {
-        padding: 160px 0;
+        padding: 160px 0 0;
     }
     .about::before {
         left: 80px;
@@ -389,7 +407,19 @@ strong {
 
 
 
-
+.footer {
+    background-image: url(../images/bottom.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    margin-top: 160px;
+    padding: 320px 0 80px;
+    text-align: right;
+}
+.footer h4 {
+    color: #9F6EDB;
+    font-weight: 400;
+}
 
 
 
