@@ -375,6 +375,28 @@ strong {
 }
 
 
+.my-resume {
+    position: relative;
+}
+.my-resume::before {
+    background-image: url(../images/squiggle3.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 160px;
+    content: "";
+    height: 420px;
+    position: absolute;
+    left: 0;
+    top: -40px;
+    width: 100%;
+    z-index: -1;
+}
+@media screen and (min-width: 800px) {
+    .my-resume::before {
+        background-size: 200px;
+        top: -80px;
+    }
+}
 .resume {
     background-color: #171C21;
     border-radius: 24px;
@@ -382,7 +404,6 @@ strong {
     display: block;
     font-weight: 700;
     padding: 40px;
-/*    text-align: center;*/
     text-decoration: none;
 }
 .resume:hover {
@@ -399,7 +420,6 @@ strong {
     position: relative;
 }
 .resume-content--icon {
-/*    display: none;*/
     padding-left: 8px;
     position: absolute;
 }
@@ -409,9 +429,6 @@ strong {
         padding: 40px;
         text-align: center;
     }
-    /*.resume-content--icon {
-        display: inline-block;
-    }*/
 }
 
 
