@@ -99,6 +99,14 @@ strong {
     }
 }
 
+.pad-top--80 {
+    padding-top: 80px;
+}
+@media screen and (min-width: 800px) {
+    .pad-top--80 {
+        padding-top: 160px;
+    }
+}
 .mar-bot--8 {
     margin-bottom: 8px;
 }
@@ -373,8 +381,8 @@ strong {
     color: #FFF;
     display: block;
     font-weight: 700;
-    padding: 40px 24px;
-    text-align: center;
+    padding: 40px;
+/*    text-align: center;*/
     text-decoration: none;
 }
 .resume:hover {
@@ -399,6 +407,7 @@ strong {
     .resume {
         border-radius: 64px;
         padding: 40px;
+        text-align: center;
     }
     /*.resume-content--icon {
         display: inline-block;
@@ -411,16 +420,22 @@ strong {
     background-image: url(../images/bottom.svg);
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 100%;
     margin-top: 160px;
-    padding: 320px 0 80px;
-    text-align: right;
+    padding: 320px 0 120px;
+    text-align: center;
 }
 .footer h4 {
     color: #9F6EDB;
+    font-size: 20px;
     font-weight: 400;
 }
-
+@media screen and (min-width: 800px) {
+    .footer {
+        background-size: 60%;
+        text-align: right;
+    }
+}
 
 
 
