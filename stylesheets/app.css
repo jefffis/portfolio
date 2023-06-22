@@ -143,6 +143,9 @@ strong {
 .mar-bot--32 {
     margin-bottom: 32px;
 }
+.mar-bot--40 {
+    margin-bottom: 40px;
+}
 .mar-bot--64 {
     margin-bottom: 64px;
 }
@@ -442,6 +445,26 @@ strong {
 .btn--black {
     background-color: #171C21;
     margin: 0;
+}
+.btn--back {
+    color: #FFF;
+    display: inline-block;
+    font-size: 20px;
+    left: 32px;
+    position: relative;
+}
+.btn--back::before {
+    background-image: url(../images/arrow-left.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 32px;
+    content: "";
+    display: block;
+    height: 32px;
+    position: absolute;
+    right: calc(100% + 8px);
+    top: 0;
+    width: 32px;
 }
 
 
