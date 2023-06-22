@@ -41,9 +41,26 @@ a:active {
 .about .container {
     overflow: visible;
 }
+.work-container img {
+    max-width: 100%;
+}
+@media screen and (min-width: 800px) {
+    .work-container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 800px;
+    }
+    .work-container img {
+        border-radius: 64px;
+        max-width: 100%;
+    }
+}
 @media screen and (min-width: 1248px) {
     .container {
         overflow: unset;
+    }
+    .work-container {
+        max-width: 1200px;
     }
 }
 
@@ -69,11 +86,14 @@ strong {
 }
 .heading--intro {
     color: #FED21C;
-    font-size: 24px;
+    font-size: 32px;
     letter-spacing: 2px;
     text-align: center;
     text-shadow: 1px 1px 0 #03CABE, 2px 2px 0 #03CABE, 3px 3px 0 #03CABE, 4px 4px 0 #03CABE, 5px 5px 0 #03CABE, 6px 6px 0 #03CABE;
     text-transform: uppercase;
+}
+.text--center {
+    text-align: center;
 }
 
 @media screen and (min-width: 800px) {
@@ -146,6 +166,7 @@ strong {
     .header {
         background-color: rgba(117, 2, 209, 0.8);
         backdrop-filter: blur(8px);
+        padding: 24px;
         position: fixed;
         top: 0;
         width: 100%;
@@ -153,9 +174,11 @@ strong {
     }
 }
 .logo {
+    color: #FFF;
     line-height: 40px;
     padding-left: 52px;
-    position: relative
+    position: relative;
+    text-decoration: none;
 }
 .logo--img {
     border-radius: 12px;
@@ -220,6 +243,11 @@ strong {
 .hero {
     padding-top: 40px;
 }
+.hero--detail {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
 @media screen and (min-width: 800px) {
     .hero {
         padding-top: 160px;
@@ -243,6 +271,9 @@ strong {
 .work--item img {
     max-width: 100%;
 }
+.no-padding img {
+    border-radius: 24px;
+}
 @media screen and (min-width: 800px) {
     .work {
         padding: 160px 0;
@@ -251,6 +282,12 @@ strong {
         border-radius: 64px;
         padding: 120px 0;
     }
+    .no-padding img {
+        border-radius: 64px;
+    }
+}
+.no-padding {
+    padding: 0;
 }
 .work--item::before,
 .work--item::after {
@@ -315,6 +352,7 @@ strong {
 .more-context {
     color: #FFF;
     display: block;
+    font-size: 20px;
     position: relative;
     text-align: center;
     z-index: 3;
@@ -368,6 +406,7 @@ strong {
     font-size: 20px;
     font-weight: 700;
     line-height: 56px;
+    min-width: 120px;
     padding: 0 24px;
     text-align: center;
     text-decoration: none;
@@ -399,6 +438,10 @@ strong {
         margin-right: -8px;
         margin-top: -8px;
     }
+}
+.btn--black {
+    background-color: #171C21;
+    margin: 0;
 }
 
 
@@ -446,10 +489,18 @@ strong {
 .resume-content {
     position: relative;
 }
+/*.btn-content {
+    display: block;
+    min-width: 120px;
+}*/
 .resume-content--icon {
     padding-left: 8px;
     position: absolute;
 }
+/*.btn-content--icon {
+    padding-right: 8px;
+    position: absolute;
+}*/
 @media screen and (min-width: 800px) {
     .resume {
         border-radius: 64px;
