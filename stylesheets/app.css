@@ -359,6 +359,7 @@ strong {
 .desc {
     color: #666;
     display: block;
+    font-family: 'Inter';
     font-size: 16px;
     font-weight: 400;
 }
@@ -377,12 +378,13 @@ strong {
 }
 
 .more-context {
-    color: #FFF;
-    display: block;
     font-size: 20px;
     position: relative;
     text-align: center;
     z-index: 3;
+}
+.more-context a {
+    color: #FFF;
 }
 
 @media screen and (min-width: 1248px) {
