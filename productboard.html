@@ -71,5 +71,22 @@
       </div>
     </footer>
 
+    <script>
+      var back_button = document.querySelector('.btn--back');
+
+      back_button.onclick = function(e) {
+        sameSite(e);
+      };
+
+      function sameSite(evt) {
+        var portfolio_root = 'https://hire.jefff.co/',
+            portfolio_root_html = 'https://hire.jefff.co/index.html';
+        if (document.referrer != "" && (document.referrer == portfolio_root || document.referrer == portfolio_root_html)) {
+          evt.preventDefault();
+          history.back();
+        }
+      }
+    </script>
+
   </body>
 </html>
