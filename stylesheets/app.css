@@ -92,6 +92,9 @@ strong {
     text-shadow: 1px 1px 0 #03CABE, 2px 2px 0 #03CABE, 3px 3px 0 #03CABE, 4px 4px 0 #03CABE, 5px 5px 0 #03CABE, 6px 6px 0 #03CABE;
     text-transform: uppercase;
 }
+.hero--detail .heading--intro {
+    text-align: left;
+}
 .text--center {
     text-align: center;
 }
