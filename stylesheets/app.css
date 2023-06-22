@@ -342,11 +342,19 @@ strong {
 .mini {
     color: #171C21;
     font-weight: 700;
+/*    position: relative;*/
     text-decoration: none;
     transition: box-shadow 0.16s ease-in-out, color 0.24s ease-in-out, transform 0.08s ease-in-out;
 }
+/*.mini::before {
+    content: "Mini-project";
+    display: block;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+}*/
 .mini:hover {
-    color: #7502D1;
+    color: #FB57B9;
 }
 .desc {
     color: #666;
