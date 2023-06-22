@@ -30,6 +30,7 @@ a:hover {
 }
 a:active {
     opacity: 0.64;
+    transform: scale(0.975);
 }
 
 .container {
@@ -42,6 +43,7 @@ a:active {
     overflow: visible;
 }
 .work-container img {
+    box-shadow: 0 12px 32px rgba(33, 37, 41, 0.24);
     max-width: 100%;
 }
 @media screen and (min-width: 800px) {
@@ -51,7 +53,7 @@ a:active {
         max-width: 800px;
     }
     .work-container img {
-        border-radius: 64px;
+        border-radius: 8px;
         max-width: 100%;
     }
 }
@@ -332,6 +334,7 @@ strong {
 }
 .work--item:active {
     opacity: 1;
+    transform: scale(0.975);
 }
 .work--item:focus {
     box-shadow: 0 0 0 10px #03CABE;
