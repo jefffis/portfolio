@@ -458,7 +458,7 @@ strong {
     padding: 0 24px;
     text-align: center;
     text-decoration: none;
-    transition: box-shadow 0.16s ease-in-out;
+    transition: box-shadow 0.32s ease-in-out;
 }
 .btn:hover {
     box-shadow: 0 12px 32px rgba(33, 37, 41, 0.24);
@@ -543,6 +543,7 @@ strong {
     font-weight: 700;
     padding: 40px;
     text-decoration: none;
+    transition: box-shadow 0.32s ease-in-out;
 }
 .resume:hover {
     box-shadow: 0 12px 32px rgba(33, 37, 41, 0.24);
