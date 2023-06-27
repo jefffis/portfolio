@@ -669,23 +669,33 @@ background-color: #7502D1;
 .review--item {
     background-color: #FFF;
     border-radius: 8px;
-    box-shadow: 0 12px 32px rgba(33, 37, 41, 0.24);
+/*    box-shadow: 0 12px 32px rgba(33, 37, 41, 0.24);*/
     color: #171C21;
     padding: 32px 40px;
     position: relative;
+    transition: background-color 0.24s ease-in-out, color 0.24s ease-in-out;
 }
-.review--item:after {
-    background-color: currentColor;
-    border-radius: 12px;
+.review--item::after {
+    background-color: #171C21;
+    border-radius: 16px;
     content: "";
     display: block;
     height: 100%;
     left: 16px;
     position: absolute;
-    opacity: 0.4;
+/*    opacity: 0.4;*/
     top: 16px;
     width: 100%;
     z-index: -1;
+    transition: left 0.24s ease-in-out, top 0.24s ease-in-out;
+}
+.review--item:hover {
+    background-color: #FB57B9;
+    color: #FFF;
+}
+.review--item:hover::after {
+    left: 32px;
+    top: 32px;
 }
 /*@media screen and (min-width: 800px) {
     .reviews-list {
