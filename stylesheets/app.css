@@ -56,14 +56,14 @@ a:active {
     letter-spacing: 2px;
     opacity: 0.64;
 }
-.tldr li:after {
+li:after {
     content: ",";
     left: .125em;
     opacity: 0.64;
     position: relative;
 }
-.tldr li:last-of-type:after {
-    content: "";
+li:last-of-type:after {
+    content: ".";
 }
 
 .has-many {
@@ -129,7 +129,7 @@ strong {
     color: #FED21C;
     font-size: 32px;
     letter-spacing: 2px;
-    text-align: center;
+/*    text-align: center;*/
     text-shadow: 1px 1px 0 #03CABE, 2px 2px 0 #03CABE, 3px 3px 0 #03CABE, 4px 4px 0 #03CABE, 5px 5px 0 #03CABE, 6px 6px 0 #03CABE;
     text-transform: uppercase;
 }
@@ -468,6 +468,27 @@ strong {
     .header {
         padding: 24px 32px;
     }
+}
+
+.skill-list {
+    list-style: none;
+}
+.skill-list li {
+    padding-left: 40px;
+    position: relative;
+}
+.skill-list li:before {
+    background-image: url(../images/bolt.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    content: "";
+    display: block;
+    height: 24px;
+    left: 0;
+    position: absolute;
+    top: 12px;
+    width: 24px;
 }
 
 
