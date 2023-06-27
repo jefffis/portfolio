@@ -549,8 +549,16 @@ strong {
 .btn:active {
     box-shadow: none;
 }
-.btn:nth-of-type(n+2) {
+/*.btn:nth-of-type(n+2) {
     margin-top: 24px;
+}*/
+@media screen and (max-width: 799px) {
+    .links {
+        display: grid;
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 @media screen and (min-width: 800px) {
     .btn {
