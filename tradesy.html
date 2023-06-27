@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title dir="ltr">Tradesy | made by Jefff</title>
+    <meta name="description" content="Self-service overhaul" />
+
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='made by Jeff' />
+    <meta property='og:description' content='The web sandbox of Jeff Doan; my work, my musings on product design, email design, and other web-related thingamajigs.' />
+    <meta property='og:image' content='/images/social-image.png' />
+
+    <link href="stylesheets/app.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="more/img/favicon.png" type="image/x-icon" />
+
+    <script>
+      document.addEventListener("touchstart", function(){},false);
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-55953811-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    
+    <header class="header ibm grid grid--2 grid-gap--32">
+      <div class="logo">
+        <img src="images/me.jpg" class="logo--img" />
+        made by <strong>Jeff</strong>
+      </div>
+      <nav class="nav">
+        <a href="index.html#work" class="nav--link">work</a>
+        <a href="index.html#about" class="nav--link">about/contact</a>
+        <a href="index.html#my-resume" class="nav--link">résumé</a>
+      </nav>
+    </header>
+    
+    <main class="container">
+      
+      <div class="hero hero--detail mar-bot--80">
+        <a href="index.html" class="btn--back mar-bot--40">
+          Go back
+        </a>
+
+        <h3 class="heading heading--intro ibm mar-bot--32">Tradesy</h3>
+        <h1 class="heading xl ibm mar-bot--32">Self-service overhaul</h1>
+        <p class="body mar-bot--32"><strong>The problem:</strong> Getting help on a website can be overwhelming, and often is an afterthought from a design standpoint. At Tradesy, we knew that our current solution (like so many others) was lacking, as well as it was actually creating a bottle neck for our Member Care Team.</p>
+        <p class="body mar-bot--32">
+          <strong>My solution</strong>
+          <br />
+          We focussed on designing &amp; building a solution that freed up our Member Care agents to help out our members who really had large issues, and to allow our members with small issues to get the help they needed by themselves, and thus get back to more important things in their lives.
+        </p>
+        <p class="body mar-bot--32">
+          Using Zendesk&rsquo;s API, we pulled all the content onto our site to create a seamless experience for our members on tradesy.com. If a member is logged in, we can better tailor the types of suggested articles to help them, as well as if they need to contact us, we automatically pass over all the necessary data to our Member Care team without the member needing to do or provide anything else.
+        </p>
+        <p class="body mar-bot--32">
+          We also designed and built a new &ldquo;short answer&rdquo; concept that we are truly proud of. A member who has an issue drills down from the new Help homepage into a chosen category, and gets to a list of questions relating to their issue. Inside each question, is a summary of the question (i.e. the short answer), that should be salient enough to answer 99% of our users issues. If it&rsquo;s not, then they can read the full article, or they can then contact us.
+        </p>
+        <p class="body mar-bot--32"><strong>What I did:</strong> I led the research, designed and built the front-end, and integrated the API code necessary for this.</p>
+        <a href="more/img/tradesy-self-service.gif" target="_blank" class="btn btn--black ibm">View mobile prototype</a>
+      </div>
+
+    </main>
+      
+    <div class="work-container text--center">
+      <img src="more/img/self-service.png" class="mar-bot--8" />
+      <p class="ibm">Desktop + tablet & mobile view</p>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <h4 class="heading ibm micro">
+          © jefff.co
+        </h4>
+      </div>
+    </footer>
+
+    <script>
+      var back_button = document.querySelector('.btn--back');
+
+      back_button.onclick = function(e) {
+        sameSite(e);
+      };
+
+      function sameSite(evt) {
+        var portfolio_root = 'https://hire.jefff.co/',
+            portfolio_root_html = 'https://hire.jefff.co/index.html';
+        if (document.referrer != "" && (document.referrer == portfolio_root || document.referrer == portfolio_root_html)) {
+          evt.preventDefault();
+          history.back();
+        }
+      }
+    </script>
+
+  </body>
+</html>

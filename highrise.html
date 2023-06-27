@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title dir="ltr">Highrise | made by Jefff</title>
+    <meta name="description" content="Rethinking Tasks, a design challenge." />
+
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='made by Jeff' />
+    <meta property='og:description' content='The web sandbox of Jeff Doan; my work, my musings on product design, email design, and other web-related thingamajigs.' />
+    <meta property='og:image' content='/images/social-image.png' />
+
+    <link href="stylesheets/app.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="more/img/favicon.png" type="image/x-icon" />
+
+    <script>
+      document.addEventListener("touchstart", function(){},false);
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-55953811-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    
+    <header class="header ibm grid grid--2 grid-gap--32">
+      <div class="logo">
+        <img src="images/me.jpg" class="logo--img" />
+        made by <strong>Jeff</strong>
+      </div>
+      <nav class="nav">
+        <a href="index.html#work" class="nav--link">work</a>
+        <a href="index.html#about" class="nav--link">about/contact</a>
+        <a href="index.html#my-resume" class="nav--link">résumé</a>
+      </nav>
+    </header>
+    
+    <main class="container">
+      
+      <div class="hero hero--detail mar-bot--80">
+        <a href="index.html" class="btn--back mar-bot--40">
+          Go back
+        </a>
+
+        <h3 class="heading heading--intro ibm mar-bot--32">Highrise</h3>
+        <h1 class="heading xl ibm mar-bot--32">Rethinking Tasks</h1>
+        <p class="body mar-bot--32"><strong>The problem:</strong> Overdue tasks are a huge point of pain for users of task systems everywhere. People love starting new task systems (Things, Asana, whatever), but once you start collecting old/overdue tasks people start throwing away/ignoring/starting over.</p>
+        <p class="body mar-bot--32"><strong>My solution:</strong> <em>Note: this was a design exercise, I put my best effort forth with all that I knew at the time.</em> That said, at a high-level, for Overdue tasks: break out the list into groupings based on their Category. Plus, add in bulk editing of tasks, giving the user a quick way to dismiss loads of tasks that are not critical, or might be long gone. You can also bulk update (i.e. adjust due dates, assingees, etc.) loads of tasks at the same time. Any time you add bulk editing for actions, you also need to add in undo support for these as well. Supporting mistakes in UI is critical to reducing anxiety around updating tasks. Along with these new additions to the overall system, I wanted to add in a Deleted view to allow for more power user support.</p>
+        <p class="body mar-bot--32"><strong>What I did:</strong> I researched, iterated, designed and built the front-end for this prototype.</p>
+        <a href="https://wtf.jefff.co/Highrise-comps/" target="_blank" class="btn btn--black ibm">View prototype</a>
+      </div>
+
+    </main>
+      
+    <div class="work-container text--center">
+      <img src="more/img/highrise/highrise.gif" class="mar-bot--8" />
+      <p class="ibm">Desktop + tablet (mobile excluded)</p>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <h4 class="heading ibm micro">
+          © jefff.co
+        </h4>
+      </div>
+    </footer>
+
+    <script>
+      var back_button = document.querySelector('.btn--back');
+
+      back_button.onclick = function(e) {
+        sameSite(e);
+      };
+
+      function sameSite(evt) {
+        var portfolio_root = 'https://hire.jefff.co/',
+            portfolio_root_html = 'https://hire.jefff.co/index.html';
+        if (document.referrer != "" && (document.referrer == portfolio_root || document.referrer == portfolio_root_html)) {
+          evt.preventDefault();
+          history.back();
+        }
+      }
+    </script>
+
+  </body>
+</html>

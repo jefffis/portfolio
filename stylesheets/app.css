@@ -40,6 +40,17 @@ a:active {
     box-shadow: 0 12px 32px rgba(33, 37, 41, 0.24);
     max-width: 100%;
 }
+.has-many {
+    background-color: #171C21;
+    border-radius: 24px;
+    padding: 24px;
+}
+.has-many img {
+    border-radius: 8px;
+}
+.has-many img:nth-of-type(n+2) {
+    margin-top: 24px;
+}
 @media screen and (min-width: 800px) {
     .work-container {
         margin-left: auto;
@@ -49,6 +60,9 @@ a:active {
     .work-container img {
         border-radius: 8px;
         max-width: 100%;
+    }
+    .has-many img:nth-of-type(n+2) {
+        margin-top: 0;
     }
 }
 @media screen and (min-width: 1248px) {
@@ -108,6 +122,10 @@ strong {
     .grid {
         display: grid;
     }
+    .grid-gap--24 {
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+    }
     .grid-gap--32 {
         grid-column-gap: 32px;
     }
@@ -119,6 +137,9 @@ strong {
     }
     .grid--3 {
         grid-template-columns: repeat(3, 1fr);
+    }
+    .grid--4 {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
