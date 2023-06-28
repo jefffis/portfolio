@@ -218,7 +218,7 @@ strong {
 }
 @media screen and (min-width: 800px) {
     .header {
-        background-color: rgba(117, 2, 209, 0.8);
+        background-color: rgba(117, 2, 209, 0.4);
         backdrop-filter: blur(8px);
         padding: 24px;
         position: fixed;
@@ -675,15 +675,20 @@ background-color: #7502D1;
     max-width: 800px;
 }
 .review--item {
-    background-color: #FFF;
-    border-radius: 8px;
+/*    background-color: #FFF;*/
+    background-image: url(../images/starburst.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+/*    border-radius: 8px;*/
 /*    box-shadow: 0 12px 32px rgba(33, 37, 41, 0.24);*/
-    color: #171C21;
-    padding: 32px 40px;
+    color: #FFF;
+    padding: 100px 24px;
+/*    text-shadow: 1px 1px 0 #171C21;*/
     position: relative;
-    transition: background-color 0.24s ease-in-out, color 0.24s ease-in-out;
+/*    transition: background-color 0.24s ease-in-out, color 0.24s ease-in-out;*/
 }
-.review--item::after {
+/*.review--item::after {
     background-color: #171C21;
     border-radius: 16px;
     content: "";
@@ -691,7 +696,6 @@ background-color: #7502D1;
     height: 100%;
     left: 16px;
     position: absolute;
-/*    opacity: 0.4;*/
     top: 16px;
     width: 100%;
     z-index: -1;
@@ -704,12 +708,20 @@ background-color: #7502D1;
 .review--item:hover::after {
     left: 32px;
     top: 32px;
-}
-/*@media screen and (min-width: 800px) {
-    .reviews-list {
-        text-align: center;
-    }
 }*/
+@media screen and (min-width: 800px) {
+    .review--item {
+        padding: 160px 80px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .review--item:nth-of-type(odd) {
+        right: 120px;
+    }
+    .review--item:nth-of-type(2) {
+        left: 120px;
+    }
+}
 
 
 .footer {
