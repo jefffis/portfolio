@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title dir="ltr">Heal.me | made by Jefff</title>
+    <meta name="description" content="A deep-dive case-study on the work I have been leading as the Head of Design at Heal.me." />
+
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='made by Jeff' />
+    <meta property='og:description' content='A deep-dive case-study on the work I have been leading as the Head of Design at Heal.me' />
+    <meta property='og:image' content='/images/social-image.png' />
+
+    <link href="stylesheets/app.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="more/img/favicon.png" type="image/x-icon" />
+
+    <script>
+      document.addEventListener("touchstart", function(){},false);
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-55953811-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    
+    <header class="header ibm grid grid--2 grid-gap--32">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/me.jpg" class="logo--img" />
+          made by <strong>Jeff</strong>
+        </a>
+      </div>
+      <nav class="nav">
+        <a href="index.html#work" class="nav--link">work</a>
+        <a href="index.html#about" class="nav--link">about</a>
+        <a href="index.html#my-resume" class="nav--link">résumé</a>
+        <a href="index.html#reviews" class="nav--link">reviews</a>
+      </nav>
+    </header>
+    
+    <main class="container">
+      
+      <div class="hero hero--detail mar-bot--80">
+        <a href="index.html" class="btn--back mar-bot--40">
+          Go back
+        </a>
+
+        <h3 class="heading heading--intro ibm mar-bot--32">Heal.me</h3>
+        <h1 class="heading xl ibm mar-bot--32">Your practice in your pocket</h1>
+        <ul class="tldr body ibm mar-bot--32">
+          <li>Heal.me is an all-in-one toolkit for holistic practitioners to run their businesses. I&rsquo;ve been leading the design and product efforts to drive more adoption of the saas product, and this is the upcoming work for their mobile app</li>
+        </ul>
+          
+        <p class="body mar-bot--32"><strong>What I did:</strong> UX research, UX writing, data analysis, visual design, prototyping, usability testing, product strategy &amp; prioritization, and more.</p>
+        
+        <hr class="designy" />
+        
+        <div style="position: relative; padding-bottom: 56.25%; height: 0;" class="mar-bot--16"><iframe src="https://www.loom.com/embed/c7e3a8758949420a88065a02fdd3d7b6?sid=1de61032-9980-45aa-8f58-fff6635c5b42" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+        <div class="ibm micro text--center">Heal.me doesn’t offer free trials, so here’s a video showing this work.</div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <h4 class="heading ibm micro">
+          © jefff.co
+        </h4>
+      </div>
+    </footer>
+
+    <script>
+      var back_button = document.querySelector('.btn--back');
+
+      back_button.onclick = function(e) {
+        sameSite(e);
+      };
+
+      function sameSite(evt) {
+        var portfolio_root = 'https://hire.jefff.co/',
+            portfolio_root_html = 'https://hire.jefff.co/index.html';
+        if (document.referrer != "" && (document.referrer == portfolio_root || document.referrer == portfolio_root_html)) {
+          evt.preventDefault();
+          history.back();
+        }
+      }
+    </script>
+
+  </body>
+</html>
