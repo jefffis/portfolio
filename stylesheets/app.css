@@ -664,6 +664,17 @@ strong {
     background-color: #171C21;
     margin: 0;
 }
+.btn--black--outline {
+    background-color: #7502D1;
+    box-shadow: 0 0 0 4px inset #171C21;
+    margin: 0;
+}
+.btn--black--outline:hover {
+    box-shadow: 0 0 0 4px inset #171C21, 0 12px 32px rgba(33, 37, 41, 0.24);
+}
+.btn--black--outline:focus {
+    box-shadow: 0 0 0 4px inset #171C21, 0 0 0 4px #03CABE;
+}
 .btn--back {
     color: #FFF;
     display: inline-block;
