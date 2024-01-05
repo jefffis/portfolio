@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;700&family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -7,13 +7,14 @@
     box-sizing: border-box;
 }
 html {
-    background-color: #7502D1;
+    background-color: #F9F1FF;
+    /*background-color: #7502D1;
     background-image: url(../images/squiggle.svg);
     background-position: left 200px;
     background-repeat: no-repeat;
-    background-size: 600px;
-    color: #FFF;
-    font: normal 16px/1.5 'Inter', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-size: 600px;*/
+    color: #171C21;
+    font: normal 16px/1.5 'IBM Plex Sans Condensed', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -28,8 +29,9 @@ a:active {
 }
 
 .container {
-    margin: auto;
-    max-width: 1200px;
+/*    margin: auto;*/
+/*    max-width: 1200px;*/
+    max-width: 920px;
     padding: 0 24px;
     overflow: hidden;
 }
@@ -41,11 +43,41 @@ a:active {
     max-width: 100%;
 }
 
+.work-item {
+    border-radius: 4px;
+    color: #171C21;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    transition: box-shadow 0.32s ease-in-out,
+                background-color 0.32s ease-in-out;
+}
+.work-item h2 {
+    color: #7502D1;
+}
+.work-item:hover {
+    background-color: rgba(220, 175, 255, .12);
+    box-shadow: 0 0 0 24px rgba(220, 175, 255, .12);
+}
+.work-item:nth-of-type(n+2) {
+    margin-top: 64px;
+}
+.work-item p {
+    margin-bottom: 16px;
+    max-width: 560px;
+}
+.work-item img {
+    border: 1px solid #EBD6FB;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(33, 37, 41, 0.08);
+    width: 100%;
+}
+
 .tldr {
-    background-color: #440179;
+    background-color: #DCAFFF;
 /*    border: 1px solid #440179;*/
-    border-radius: 24px;
-    box-shadow: 0 12px 32px rgba(33, 37, 41, 0.24);
+    border-radius: 4px;
+/*    box-shadow: 0 12px 32px rgba(33, 37, 41, 0.24);*/
     padding: 16px 40px 32px;
     list-style: none;
 }
@@ -138,22 +170,24 @@ strong {
 .no-decoration li:after {
     display: none;
 }
-.no-decoration li:nth-of-type(n+2) {
+/*.no-decoration li:nth-of-type(n+2) {
     margin-top: 16px;
-}
+}*/
 .designy {
-    background-color: rgba(255, 255, 255, 0.24);
-    border-radius: 4px;
-    height: 4px;
+    background-image: url(../images/memphis-line--p.svg);
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: 40px;
+    height: 12px;
     margin: 56px 0;
 }
 .heading--intro {
-    color: #FED21C;
+/*    color: #FED21C;*/
     font-size: 32px;
-    letter-spacing: 2px;
-    text-align: center;
-    text-shadow: 1px 1px 0 #03CABE, 2px 2px 0 #03CABE, 3px 3px 0 #03CABE, 4px 4px 0 #03CABE, 5px 5px 0 #03CABE, 6px 6px 0 #03CABE;
-    text-transform: uppercase;
+/*    letter-spacing: 2px;*/
+/*    text-align: center;*/
+/*    text-shadow: 1px 1px 0 #03CABE, 2px 2px 0 #03CABE, 3px 3px 0 #03CABE, 4px 4px 0 #03CABE, 5px 5px 0 #03CABE, 6px 6px 0 #03CABE;*/
+/*    text-transform: uppercase;*/
 }
 .hero--detail .heading--intro {
     text-align: left;
@@ -167,18 +201,19 @@ strong {
 
 @media screen and (min-width: 800px) {
     .xl {
-        font-size: 80px;
+        font-size: 64px;
     }
     .l {
         font-size: 40px;
     }
-    .body {
+    /*.body {
         font-size: 32px;
-    }
+    }*/
     .body--sm {
         font-size: 24px;
     }
     .grid {
+        align-items: center;
         display: grid;
     }
     .grid-gap--24 {
@@ -239,14 +274,14 @@ strong {
     font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 .header {
-    background-color: rgb(117, 2, 209);
+/*    background-color: rgb(117, 2, 209);*/
     font-size: 20px;
     left: 0;
     padding: 24px 24px 0;
 }
 @media screen and (min-width: 800px) {
     .header {
-        background-color: rgba(117, 2, 209, 0.4);
+        background-color: rgba(249 241 255 / 0.4);
         backdrop-filter: blur(8px);
         padding: 24px;
         position: fixed;
@@ -256,14 +291,14 @@ strong {
     }
 }
 .logo {
-    color: #FFF;
+    color: #171C21;
     line-height: 40px;
     padding-left: 52px;
     position: relative;
     text-decoration: none;
 }
 .logo a {
-    color: #FFF;
+    color: #171C21;
     text-decoration: none;
 }
 .logo--img {
@@ -276,66 +311,30 @@ strong {
     width: 40px;
 }
 .nav {
-    background-color: #171C21;
-    left: 0;
+/*    background-color: #FFF;*/
+    display: block;
+/*    left: 0;*/
     line-height: 40px;
-    padding: 8px 24px;
-    position: fixed;
+    margin-top: 24px;
+/*    padding: 0;*/
+    /*position: fixed;
     bottom: 0;
     overflow: auto;
     width: 800px;
-    z-index: 10;
-}
-.nav--wrapper {
-    overflow: auto;
-    padding: 8px 0;
-    width: 1120px;
-}
-@media screen and (min-width: 800px) {
-    .nav {
-        background-color: transparent;
-        margin: unset;
-        overflow: unset;
-        padding: unset;
-        position: static;
-        text-align: right;
-        width: auto;
-    }
-    .nav--wrapper {
-        overflow: unset;
-        width: auto;
-    }
+    z-index: 10;*/
 }
 .nav--link {
-    color: white;
+    color: #171C21;
     display: inline-block;
     position: relative;
     text-decoration: none;
 }
-.nav--link:before,
-.nav--link-title::after {
+.nav--link:before {
     transition: opacity 0.32s ease-in-out;
-}
-.nav--link-title::after {
-    background-color: #171C21;
-    border-radius: 5px;
-    content: attr(data-subtitle);
-    display: block;
-    font-size: 13px;
-    font-weight: 700;
-    left: 50%;
-    line-height: 1.25;
-    margin-top: 16px;
-    opacity: 0;
-    padding: 4px 8px 3px;
-    position: absolute;
-    text-align: center;
-    transform: translateX(-50%);
-    width: 100%;
 }
 .nav--link::before {
 /*    background-color: #03CABE;*/
-    background-image: url(../images/memphis-line.svg);
+    background-image: url(../images/memphis-line--p.svg);
     background-position: center;
     background-repeat: repeat-x;
     background-size: 40px;
@@ -351,34 +350,35 @@ strong {
     z-index: -1;
 }
 .nav--link:hover::before,
-.nav--link:focus::before,
-.nav--link-title:hover::after,
-.nav--link-title:focus::after {
+.nav--link:focus::before {
     opacity: 1;
 }
 .nav--link:nth-of-type(n+2) {
     margin-left: 32px;
 }
-@media screen and (max-width: 799px) {
-    .nav--link-title::after {
-        background-color: none;
-        color: rgba(255 255 255 / 0.64);
-        content: attr(data-subtitle-sm);
-        display: inline;
-        font-weight: 400;
-        left: 8px;
-        margin-top: 0;
-        opacity: 1;
-        padding: 0;
-        position: relative;
-        text-align: left;
-        transform: none;
-    }
-}
-
 
 .hero {
-    padding-top: 40px;
+    padding: 64px 0;
+    position: relative;
+    margin-bottom: 64px;
+}
+.works {
+    margin-bottom: 64px;
+    padding-bottom: 64px;
+}
+.hero::after,
+.works::after {
+    background-image: url(../images/memphis-line--p.svg);
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: 40px;
+    content: "";
+    display: block;
+    height: 12px;
+    left: -24px;
+    position: absolute;
+    top: 100%;
+    width: calc(100% + 48px);
 }
 .hero--detail {
     margin-left: auto;
@@ -386,18 +386,30 @@ strong {
     max-width: 800px;
 }
 @media screen and (min-width: 800px) {
+    .nav {
+        margin-top: 0;
+        text-align: right;
+    }
     .hero {
-        padding-top: 160px;
+        padding-top: 128px;
+    }
+    .hero::after,
+    .works::after {
+        left: -64px;
+        width: calc(100% + 128px);
     }
     /*.nav--link:nth-of-type(n+2) {
         margin-left: 32px;
     }*/
 }
 
-.work {
+/*.work {
     padding: 80px 0;
+}*/
+.works {
+    position: relative;
 }
-.work--item {
+/*.work--item {
     background-color: #FFF;
     border-radius: 24px;
     box-shadow: 0 12px 32px rgba(33, 37, 41, 0.24);
@@ -476,7 +488,7 @@ strong {
     .work--item:nth-of-type(n+2) {
         margin-top: 0;
     }
-}
+}*/
 
 .badge {
     background-color: #171C21;
@@ -552,10 +564,10 @@ strong {
 
 @media screen and (min-width: 1248px) {
     .container {
-        padding: 0;
+        padding: 0 64px;
     }
     .header {
-        padding: 24px 32px;
+        padding: 24px 64px;
     }
 }
 
@@ -582,12 +594,12 @@ strong {
 
 
 .about, .reviews {
-    background-color: #5B02A3;
+/*    background-color: #5B02A3;*/
     padding: 80px 0;
-    position: relative;
-    z-index: 1;
+    /*position: relative;
+    z-index: 1;*/
 }
-.about::before {
+/*.about::before {
     background-image: url(../images/squiggle2.svg);
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -599,7 +611,7 @@ strong {
     top: -400px;
     width: 100vw;
     z-index: -1;
-}
+}*/
 @media screen and (min-width: 800px) {
     .about, .reviews {
         padding: 160px 0;
@@ -609,6 +621,9 @@ strong {
         width: 300px;
     }
 }
+/*.text--limit {
+    max-width: 920px;
+}*/
 
 
 .btn {
@@ -676,13 +691,13 @@ strong {
     box-shadow: 0 0 0 4px inset #171C21, 0 0 0 4px #03CABE;
 }
 .btn--back {
-    color: #FFF;
+    color: #7502D1;
     display: inline-block;
     font-size: 20px;
-    left: 32px;
-    position: relative;
+    /*left: 32px;
+    position: relative;*/
 }
-.btn--back::before {
+/*.btn--back::before {
     background-image: url(../images/arrow-left.svg);
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -694,7 +709,7 @@ strong {
     right: calc(100% + 8px);
     top: 0;
     width: 32px;
-}
+}*/
 
 
 .my-resume {
@@ -822,25 +837,33 @@ background-color: #7502D1;
 
 
 .footer {
-    background-image: url(../images/bottom.svg);
+    /*background-image: url(../images/bottom.svg);
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: 100%;
-    margin-top: 160px;
-    padding: 320px 0 120px;
-    text-align: center;
+    background-size: 100%;*/
+    margin-top: 64px;
+    padding-bottom: 64px;
+    /*padding: 320px 0 120px;
+    text-align: center;*/
+}
+.footer a {
+    color: #171C21;
+    display: inline-block;
+}
+.footer a:nth-of-type(n+2) {
+    margin-left: 16px;
 }
 .footer h4 {
-    color: #9F6EDB;
+/*    color: #9F6EDB;*/
     font-size: 20px;
     font-weight: 400;
 }
-@media screen and (min-width: 800px) {
+/*@media screen and (min-width: 800px) {
     .footer {
         background-size: 60%;
         text-align: right;
     }
-}
+}*/
 
 
 
