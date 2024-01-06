@@ -70,6 +70,9 @@ a:active {
     opacity: 1;
     transform: none;
 }
+.work-item:nth-of-type(n+2) {
+    margin-top: 32px;
+}
 .featured .work-item:nth-of-type(n+2) {
     margin-top: 64px;
 }
