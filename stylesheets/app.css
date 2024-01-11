@@ -87,7 +87,7 @@ a:active {
 }
 .work-item img, .work-sample {
     border: 1px solid #EBD6FB;
-    border-radius: 4px;
+    border-radius: 6px;
     box-shadow: 0 4px 12px rgba(33, 37, 41, 0.08);
     display: block;
     width: 100%;
