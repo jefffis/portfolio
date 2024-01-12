@@ -203,7 +203,12 @@ strong {
 .body ul + p {
     margin-top: 48px;
 }
-.body ul {
+.story p + p,
+.story p + ul,
+.story ul + p {
+    margin-top: 24px;
+}
+.body ul, .story ul {
     padding-left: 40px;
 }
 .no-decoration li:after {
@@ -447,6 +452,9 @@ strong {
     margin-right: auto;
     max-width: 800px;
 }
+.nav--link:last-of-type {
+    display: none;
+}
 @media screen and (min-width: 800px) {
     .nav {
         margin-top: 0;
@@ -463,6 +471,9 @@ strong {
     /*.nav--link:nth-of-type(n+2) {
         margin-left: 32px;
     }*/
+    .nav--link:last-of-type {
+        display: inline-block;
+    }
 }
 
 /*.work {
