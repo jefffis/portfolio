@@ -899,12 +899,18 @@ strong {
     text-align: center;
     text-decoration: none;
 }
+body {
+    padding-bottom: 64px;
+}
 @media screen and (min-width: 800px) {
     .review--item {
         font-size: 24px;
     }
     .sticky-cta {
         display: none;
+    }
+    body {
+        padding-bottom: 0;
     }
 }
 
