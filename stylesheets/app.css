@@ -311,6 +311,9 @@ strong {
 .mar-bot--40 {
     margin-bottom: 40px;
 }
+.mar-bot--48 {
+    margin-bottom: 40px;
+}
 .mar-bot--64 {
     margin-bottom: 64px;
 }
@@ -452,7 +455,8 @@ strong {
     margin-right: auto;
     max-width: 800px;
 }
-.nav--link:last-of-type {
+/*.nav--link:last-of-type */
+.hide-for-small {
     display: none;
 }
 @media screen and (min-width: 800px) {
@@ -473,6 +477,9 @@ strong {
     }*/
     .nav--link:last-of-type {
         display: inline-block;
+    }
+    .hide-for-small {
+        display: unset;
     }
 }
 
@@ -847,61 +854,57 @@ strong {
     }
 }
 
-.reviews {
-/*    background-color: #FB57B9;*/
-background-color: #7502D1;
+.review--item h2::before,
+.review--item h2::after {
+    position: absolute;
+}
+.review--item h2::before {
+    content: "“";
+    left: -1rem;
+}
+.review--item h2::after {
+    content: "”";
+    display: inline;
+}
+.review--item {
+    font-size: 20px;
+}
+.review--item h2 {
+    position: relative;
+}
+.review--item:nth-of-type(n+2) {
+    margin-top: 48px;
 }
 .reviews-list {
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
 }
-.review--item {
-/*    background-color: #FFF;*/
-    background-image: url(../images/starburst.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-/*    border-radius: 8px;*/
-/*    box-shadow: 0 12px 32px rgba(33, 37, 41, 0.24);*/
-    color: #FFF;
-    padding: 100px 24px;
-/*    text-shadow: 1px 1px 0 #171C21;*/
-    position: relative;
-/*    transition: background-color 0.24s ease-in-out, color 0.24s ease-in-out;*/
-}
-/*.review--item::after {
-    background-color: #171C21;
-    border-radius: 16px;
-    content: "";
-    display: block;
-    height: 100%;
-    left: 16px;
-    position: absolute;
-    top: 16px;
+
+
+/* sticky CTA */
+.sticky-cta {
+    background-color: rgba(249 241 255 / 0.96);    
+    border-top: 1px solid #EBD6FB;
+    bottom: 0;
+    left: 0;
+    position: fixed;
     width: 100%;
-    z-index: -1;
-    transition: left 0.24s ease-in-out, top 0.24s ease-in-out;
 }
-.review--item:hover {
-    background-color: #FB57B9;
-    color: #FFF;
+.cta--link {
+    color: #171C21;
+    display: block;
+    font-size: 20px;
+    padding: 24px 0;
+    text-align: center;
+    text-decoration: none;
 }
-.review--item:hover::after {
-    left: 32px;
-    top: 32px;
-}*/
 @media screen and (min-width: 800px) {
     .review--item {
-        padding: 160px 80px;
+        font-size: 24px;
     }
-}
-@media screen and (min-width: 1000px) {
-    .review--item:nth-of-type(odd) {
-        right: 120px;
-    }
-    .review--item:nth-of-type(2) {
-        left: 120px;
+    .sticky-cta {
+        display: none;
     }
 }
 
