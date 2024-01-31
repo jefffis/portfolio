@@ -880,6 +880,9 @@ strong {
     margin-right: auto;
     max-width: 800px;
 }
+.reviews--link {
+    font-weight: 700;
+}
 
 
 /* sticky CTA */
