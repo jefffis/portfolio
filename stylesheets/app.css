@@ -1004,7 +1004,10 @@ body {
 }
 @media screen and (max-width: 699px) {
   .promo {
-    padding: 24px;
+    padding: 32px 24px 24px;
+  }
+  .promo::before {
+    left: 24px;
   }
   .promo img {
     height: 48px;
