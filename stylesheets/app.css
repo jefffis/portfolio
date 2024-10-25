@@ -964,6 +964,56 @@ body {
 }*/
 
 
-
+/* promo area */
+.promo {
+  background-color: #FFFBEC;
+  border-radius: 16px;
+  box-shadow: 0 0 0 2px #CDC0F3, 0 4px 12px rgba(0, 0, 0, 0.04);
+  color: #171C21;
+  display: block;
+  padding: 32px;
+  position: relative;
+  text-decoration: none;
+  transition: box-shadow 0.24s ease-in-out;
+}
+.promo:hover {
+  box-shadow: 0 0 0 2px #CDC0F3, 0 12px 24px rgba(0, 0, 0, 0.12);
+/*  transform: scale(1.05);*/
+}
+/*.promo:focus {
+  box-shadow: 0 0 0 2px #1DA0FF, 0 12px 24px rgba(0, 0, 0, 0.04);
+  transition: none;
+}*/
+.promo::before {
+  background-color: #171C21;
+  border-radius: 6px;
+  bottom: calc(100% - 1rem);
+  color: white;
+  content: "New";
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  padding: .25rem .5rem;
+  position: absolute;
+  left: 32px;
+}
+.promo img {
+  float: left;
+  height: 64px;
+  margin-right: 24px;
+}
+@media screen and (max-width: 699px) {
+  .promo {
+    padding: 24px;
+  }
+  .promo img {
+    height: 48px;
+    margin-right: 16px;
+    margin-bottom: 24px;
+  }
+  .promo .body {
+    font-size: 20px;
+  }
+}
 
 
