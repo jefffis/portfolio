@@ -436,6 +436,9 @@ strong {
 .works h3.heading {
     color: #A355E2;
 }
+.works a h3.heading {
+    color: #171C21;
+}
 .hero::after,
 .works::after {
     background-image: url(../images/memphis-line--p.svg);
