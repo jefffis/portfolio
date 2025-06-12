@@ -1008,6 +1008,42 @@ body {
   height: 64px;
   margin-right: 24px;
 }
+
+/* sticky badge */
+.sticky-badge {
+    background-color: white;    
+    border: 1px solid #EBD6FB;
+    border-radius: 8px;
+    bottom: 24px;
+    /*box-shadow: 0 4px 8px rgba(33, 37, 41, 0.08);*/
+    color: #171C21;
+    font-size: 20px;
+    right: 24px;
+    padding: 24px;
+    position: fixed;
+    text-align: center;
+    text-decoration: none;
+    /*width: 100%;*/
+}
+.sticky-badge img {
+    border: 0;
+    border-radius: 100%;
+    display: block;
+    height: 48px;
+    margin: auto;
+}
+.sticky-badge span {
+    display: block;
+}
+/*.badge--link {
+    color: #171C21;
+    display: block;
+    font-size: 20px;
+    padding: 24px 0;
+    text-align: center;
+    text-decoration: none;
+}*/
+
 @media screen and (max-width: 699px) {
   .promo {
     padding: 32px 24px 24px;
@@ -1025,4 +1061,9 @@ body {
   }
 }
 
+@media screen and (max-width: 999px) {
+  .sticky-badge {
+    display: none;
+  }
+}
 
