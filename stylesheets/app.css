@@ -872,6 +872,10 @@ strong {
     content: "”";
     display: inline;
 }
+.review--item--no-quote h2::before,
+.review--item--no-quote h2::after {
+    display: none;
+}
 .review--item {
     font-size: 20px;
 }
@@ -888,6 +892,14 @@ strong {
 }
 .reviews--link {
     font-weight: 700;
+}
+.review--item--no-quote img {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #EBD6FB;
+    display: block;
+    max-width: 480px;
+    padding: 12px;
 }
 
 
@@ -1058,6 +1070,9 @@ body {
   }
   .promo .body {
     font-size: 20px;
+  }
+  .review--item--no-quote img {
+    max-width: 100%;
   }
 }
 
